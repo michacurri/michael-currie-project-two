@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap');
+
+// Font Variables
+$roboto: 'Roboto', sans-serif;
+$playfairDisplay: 'Playfair Display', serif;
+
+// Styles
+html {
+  font-family: $playfairDisplay;
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $playfairDisplay;
+  font-weight: normal;
+}
+

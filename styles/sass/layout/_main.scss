@@ -1,0 +1,9 @@
+.about {
+  height: 60vh;
+  border: 1px solid blue;
+
+  .aboutContentBox {
+    @include flexCenter();
+    flex-direction: column;
+  }
+}
