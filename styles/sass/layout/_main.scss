@@ -5,5 +5,29 @@
   .aboutContentBox {
     @include flexCenter();
     flex-direction: column;
+    width: 100%;
   }
+}
+
+
+.sectionTwo .container {
+  display: flex;
+
+
+  .imageContainer {
+    // width: calc(100% / 2);
+  }
+}
+
+
+.sectionThree {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
 }

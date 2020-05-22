@@ -1,5 +1,9 @@
-@mixin flexCenter{
+@mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin fontSize($sizeValue) {
+  font-size: $sizeValue;
 }

@@ -1,7 +1,32 @@
 header {
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  width: 100%;
   background-image: url(/assets/images//header-image.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
+  position: relative;
+
+  h1 {
+    margin: 5rem;
+  }
+
+  
 }
+
+.headerContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerBoxImage {
+  position: absolute;
+  bottom: -5rem;
+  right: 0;
+  width: 35vw;
+  box-shadow: 2rem 0 0 6rem #FDFA69;
+ }

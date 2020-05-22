@@ -1,0 +1,56 @@
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: $playfairDisplay;
+  font-size: 138px;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+//get in touch, blog
+h2 {
+  font-family: $playfairDisplay;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 92px;  
+}
+
+//what is captured
+h3 {
+  font-family: $playfairDisplay;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+}
+
+//unlock your, getting new, top picks, community
+h4 {
+  font-family: $playfairDisplay;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+}
+
+nav a {
+  font-family: $playfairDisplay;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.btn {
+  font-family: $playfairDisplay;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: $roboto;
+  font-size: 20px;
+  line-height: 32px;  
+}
