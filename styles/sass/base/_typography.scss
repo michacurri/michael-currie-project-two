@@ -1,13 +1,13 @@
 html {
   font-size: 62.5%;
+  color: $textColor;
 }
 
 h1 {
   font-family: $playfairDisplay;
   font-size: 138px;
   text-transform: uppercase;
-  z-index: 10;
-}
+  }
 
 //get in touch, blog
 h2 {

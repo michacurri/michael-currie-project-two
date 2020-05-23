@@ -1,17 +1,18 @@
 header {
-  height: 90vh;
-  width: 100%;
-  background-image: url(/assets/images//header-image.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  position: relative;
 
-  h1 {
-    margin: 5rem;
+  .container {
+    background-image: url(/assets/images//header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+
+    h1 {
+      margin: 5rem;
+      z-index: 20;
+    }
   }
-
-  
 }
 
 .headerContent {
@@ -21,6 +22,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .headerBoxImage {

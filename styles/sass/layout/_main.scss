@@ -1,33 +1,33 @@
 .about {
-  height: 60vh;
-  border: 1px solid blue;
-
-  .aboutContentBox {
-    @include flexCenter();
-    flex-direction: column;
-    width: 100%;
+  height: 80vh;
+  
+  .flexColumnContainer {
+    align-items: center;
   }
 }
 
+.sectionTwo {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
-.sectionTwo .container {
-  display: flex;
-
-
-  .imageContainer {
-    // width: calc(100% / 2);
+  .container:nth-child(1) {
+    grid-column: span 3;
+  }
+  .container:nth-child(2) {
+    grid-column: -2 / -5;
+  }
+  .container:nth-child(3) {
+    grid-column: 2 / 5;
+  }
+  .container:nth-child(4) {
+    grid-column: -1 / -4;
   }
 }
-
 
 .sectionThree {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-
-  .textContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
 }
+
