@@ -61,4 +61,8 @@
   input[type="checkbox"] {
     display: none;
   }
+  
+  .noOverflow {
+    @include noOverflow();
+  }
 }

@@ -249,67 +249,13 @@ ul {
   padding: 0;
 }
 
-html {
-  font-size: 62.5%;
-  color: #2C2C2C;
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 138px;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 80px;
-  text-transform: uppercase;
-  line-height: 92px;
-}
-
-h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 42px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-h4 {
-  font-family: "Playfair Display", serif;
-  font-size: 32px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-nav a {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  line-height: 29px;
-  letter-spacing: 1px;
-}
-
-.btn {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  line-height: 32px;
-  letter-spacing: 1px;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-}
-
 .fullWrapper {
   width: 100%;
 }
 
 .wrapper {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1200;
   height: 100%;
   margin: 0 auto;
 }
@@ -336,27 +282,55 @@ img {
   width: 100%;
 }
 
+.headerSettings {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+  width: 100%;
+}
+
 .container {
   width: 100%;
   height: 100%;
 }
 
-.flexColumnContainer {
+.flexLeft {
+  width: calc((100% * .25)-4%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2%;
+}
+
+.flexRight {
+  width: calc((100% * .75)-4%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 2%;
+}
+
+.flexRowEvenTop {
   width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.flexJustifyContainer {
+.flexRowEvenCenter {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -370,16 +344,86 @@ img {
           align-items: center;
 }
 
-header .container {
-  background-image: url(/assets/images//header-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  height: 100vh;
+html {
+  font-size: 62.5%;
+  color: #2C2C2C;
 }
 
-header .container h1 {
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 9vw;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 8rem;
+  text-transform: uppercase;
+  line-height: 92px;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 32px;
+}
+
+.email {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.btn {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+header {
+  height: 46vw;
+  width: 100%;
+  position: relative;
+}
+
+header .indexBackground {
+  background-image: url(/assets/images/header-image.jpg);
+}
+
+header .blogBackground {
+  background-image: url(/assets/images/blog-header.jpg);
+}
+
+header .contactBackground {
+  background-image: url(/assets/images/contact-header.jpg);
+}
+
+header h1 {
   margin: 5rem;
   z-index: 20;
 }
@@ -405,7 +449,7 @@ header .container h1 {
 
 .headerBoxImage {
   position: absolute;
-  bottom: -5rem;
+  top: 40vh;
   right: 0;
   width: 35vw;
   -webkit-box-shadow: 2rem 0 0 6rem #FDFA69;
@@ -449,37 +493,32 @@ nav ul li {
   height: 80vh;
 }
 
-.about .flexColumnContainer {
+.about .flexColumn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .sectionTwo {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.sectionTwo .container:nth-child(1) {
-  grid-column: span 3;
+.sectionTwo .container {
+  width: calc(100% / 2);
 }
 
-.sectionTwo .container:nth-child(2) {
-  grid-column: -2 / -5;
-}
-
-.sectionTwo .container:nth-child(3) {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2 / 5;
-}
-
-.sectionTwo .container:nth-child(4) {
-  grid-column: -1 / -4;
+.sectionTwo .container:nth-child(2), .sectionTwo .container:nth-child(3) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 50px;
 }
 
 .sectionThree {
@@ -489,6 +528,14 @@ nav ul li {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
+}
+
+.asideLeft {
+  width: calc(100% / 3);
+}
+
+.containerRight {
+  width: calc((100% / 3)*2);
 }
 
 @media (max-width: 768px) {
@@ -541,5 +588,11 @@ nav ul li {
   }
   input[type="checkbox"] {
     display: none;
+  }
+  .noOverflow {
+    max-height: 4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }

@@ -5,14 +5,14 @@ html {
 
 h1 {
   font-family: $playfairDisplay;
-  font-size: 138px;
+  font-size: createVW($h1FontSize);
   text-transform: uppercase;
   }
 
 //get in touch, blog
 h2 {
   font-family: $playfairDisplay;
-  font-size: 80px;
+  font-size: createREM($h2FontSize);
   text-transform: uppercase;
   line-height: 92px;  
 }
@@ -20,7 +20,7 @@ h2 {
 //what is captured
 h3 {
   font-family: $playfairDisplay;
-  font-size: 42px;
+  font-size: createREM($h3FontSize);
   text-transform: uppercase;
   letter-spacing: 1px; 
 }
@@ -28,29 +28,35 @@ h3 {
 //unlock your, getting new, top picks, community
 h4 {
   font-family: $playfairDisplay;
-  font-size: 32px;
+  font-size: createREM($h4FontSize);
   text-transform: uppercase;
   letter-spacing: 1px; 
 }
 
 nav a {
   font-family: $playfairDisplay;
-  font-size: 20px;
+  font-size: createREM($navFontSize);
   text-transform: uppercase;
   line-height: 29px;
   letter-spacing: 1px;
 }
 
+p {
+  font-family: $roboto;
+  font-size: createREM($bodyFontSize);
+  line-height: 32px;  
+}
+
+.email {
+  font-family: $playfairDisplay;
+  font-size: createREM($emailFontSize);
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
 .btn {
   font-family: $playfairDisplay;
-  font-size: 20px;
+  font-size: createREM($btnFontSize);
   text-transform: uppercase;
   line-height: 32px;
   letter-spacing: 1px;
-}
-
-p {
-  font-family: $roboto;
-  font-size: 20px;
-  line-height: 32px;  
 }

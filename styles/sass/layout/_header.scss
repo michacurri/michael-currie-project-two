@@ -1,19 +1,27 @@
 header {
 
-  .container {
-    background-image: url(/assets/images//header-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    height: 100vh;
+  height: 46vw;
+  width: 100%;
+  position: relative;
 
-    h1 {
-      margin: 5rem;
-      z-index: 20;
-    }
+  .indexBackground {
+    background-image: url(/assets/images/header-image.jpg);
+  }
+
+  .blogBackground {
+    background-image: url(/assets/images/blog-header.jpg);
+  }
+
+  .contactBackground {
+    background-image: url(/assets/images/contact-header.jpg);
+  }
+
+  h1 {
+    margin: 5rem;
+    z-index: 20;
   }
 }
+
 
 .headerContent {
   height: 100%;
@@ -27,8 +35,8 @@ header {
 
 .headerBoxImage {
   position: absolute;
-  bottom: -5rem;
+  top: 40vh;
   right: 0;
   width: 35vw;
   box-shadow: 2rem 0 0 6rem #FDFA69;
- }
+}

@@ -3,10 +3,7 @@
 }
 
 .wrapper {
-  width: 90%;
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
+  @include innerWrapper;
 }
 
 .flexWrapper {
@@ -26,15 +23,33 @@ img {
   width: 100%
 }
 
+.headerSettings {
+  @include headerSettings;
+}
+
+
 .container {
-  width: 100%;
+  width: 100%;  
   height: 100%;
 }
 
-.flexColumnContainer {
-  @include flexCenter();
+.flexColumnCenter {
+  @include flexColumnCenter();
 }
 
-.flexJustifyContainer {
-  @include flexJustify();
+.flexLeft {
+  @include flexLeft();
 }
+
+.flexRight {
+  @include flexRight();
+}
+
+.flexRowEvenTop {
+  @include flexJustifyTop();
+}
+
+.flexRowEvenCenter {
+  @include flexJustifyCenter();
+}
+

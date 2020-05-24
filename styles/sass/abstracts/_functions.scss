@@ -1,0 +1,10 @@
+// take a font-size from _variables, and translate it to a VW 
+@function createVW($fontSize) {
+  @return ((($fontSize / $maxWidth)*100vw)-2.5vw);
+}
+
+// font-size REM creator
+@function createREM($fontSize) {
+  @return ($fontSize * 0.1rem);
+}
+
