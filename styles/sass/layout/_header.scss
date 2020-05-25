@@ -1,24 +1,37 @@
+// all header settings
 header {
-  height: 46vw;
+  height: 35.7vw;
   width: 100%;
-  position: relative;
+  // position: relative;
 
-  .indexBackground {
+  .indexHeaderImage {
     background-image: url(/assets/images/header-image.jpg);
+    background-size: cover;
   }
 
-  .blogBackground {
+  .blogHeaderImage {
     background-image: url(/assets/images/blog-header.jpg);
   }
 
-  .contactBackground {
+  .contactHeaderImage {
     background-image: url(/assets/images/contact-header.jpg);
   }
 
+  // Title specific positioning
   h1 {
     margin: 5rem;
     z-index: 20;
   }
+
+  h2 {
+    margin-bottom: 18rem;
+    padding-left: 15rem;
+  }
+}
+
+// to adjust the index header size for positioning
+#homeAnchor {
+  height: 46vw;
 }
 
 .headerContent {
@@ -33,8 +46,9 @@ header {
 
 .headerBoxImage {
   position: absolute;
-  top: 40vh;
+  z-index: 10;
+  top: 23vh;
   right: 0;
-  width: 35vw;
-  box-shadow: 2rem 0 0 6rem #FDFA69;
+  width: 38vw;
+  box-shadow: 0vw 0 0 4vw #FDFA69;
 }

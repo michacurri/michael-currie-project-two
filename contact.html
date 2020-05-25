@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capture - Contact</title>
   <link rel="stylesheet" href="/styles/style.css">
+  <script src="https://kit.fontawesome.com/71e13a3cd0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <div class="contactBackground headerSettings">
+    <div class="contactHeaderImage headerSettings">
       <div class="wrapper">
         <div class="headerContent">
           <nav>
@@ -18,19 +19,72 @@
             <input type="checkbox" id="hamburger" />
             <ul class="navMenu">
               <li><a href="/index.html">home</a></li>
-              <li><a href="#aboutAnchor">about</a></li>
+              <li><a href="/index.html#aboutAnchor">about</a></li>
               <li><a href="/blog.html">blog</a></li>
               <li><a href="/contact.html">contact</a></li>
             </ul>
           </nav>
-          <h1>Contact</h1>
-        </div>
-        <div class="headerBoxImage">
-          <img src="./assets/images/header-box-image.jpg" alt="closeup shot of the new Fuji 18-55 f/2.8-4 lens">
+          <h2>get in touch</h2>
         </div>
       </div>
     </div>
   </header>
+
+  <section class="sectionNine relative">
+    <div class="wrapper flex rowReverse">
+
+      <section class="contactSection flex headerBoxImage">
+              <!-- contact form -->
+        <div class="captureForm flex clearfix">
+          <form action="" class="flex flexColumn clearfix">
+            <fielset class="nameEmailFieldset">
+              <div class="flex nameField">
+                <fieldset class="name flex">
+                  <input type="text" maxlength="20" placeholder="Name">
+                </fieldset>
+              </div>
+              <div class="flex emailField">
+                <fieldset class="emailAddress flex">
+                  <input type="email" placeholder="Email address">
+                </fieldset>
+              </div>
+            </fielset>
+
+            <fieldset class="flex commentField">
+              <textarea name="" id="" cols="30" rows="6" placeholder="Message"></textarea>
+            </fieldset>
+            <a href="#" class="flex btn">submit</a>
+          </form>
+        </div>
+        <!-- end of form -->
+      </section>
+
+      <section class="flex flexColumn justEnd">
+        <div class="socialIcons flex">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="emailAddress">
+          <h4>info@email.com</h4>
+        </div>
+        <div class="contactInfo flex flexColumn">
+          <p>123 - 456 - 789</p>
+          <p>123 Queen St West, Unit 10</p>
+          <p>Toronto, Ontario</p>
+          <p>M5V2D5</p>
+        </div>
+      </section>
+
+
+  </section>
+
 </body>
+<footer>
+  <div class="flex centerCenter">
+    <p>Copyright &copy; 2018 HackerYou</p>
+  </div>
+</footer>
 
 </html>

@@ -7,9 +7,9 @@
 .sectionSeven {
   width: calc((100% / 3) - 10rem);
   margin-right: 10rem;
+  height: 100%;
 
   .container:nth-child(1) {
-
     width: 115%;
 
     img {
@@ -24,7 +24,6 @@
 
   .blog>.container {
     padding: 6% 6% 1% 6%;
-    ;
     box-shadow: -9px 9px 0 -4px #FDFA69;
   }
 }
@@ -41,7 +40,7 @@
   }
 }
 
-.commentBox {
+.captureForm {
 
   fieldset,
   a {
@@ -61,10 +60,8 @@
 
   .name,
   .emailAddress {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: $btnColor;
+    border: none;
+    border-bottom: 0.2rem solid $btnColor;
   }
 
   input,
@@ -78,7 +75,7 @@
   }
 
   .commentField {
-    border-color: $btnColor;
+    border: 0.2rem solid $btnColor;
   }
 
 }

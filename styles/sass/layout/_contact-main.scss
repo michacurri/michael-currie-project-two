@@ -1,0 +1,51 @@
+.sectionNine {
+
+
+  section:first-child {
+    width: calc((100% * 66.66) - 6%);
+    padding: $mdAll;
+  }
+
+  section:last-child {
+    width: calc((100% * 33.33) - 6%);
+    padding: 0 3% 17%;
+    
+  }
+
+  .headerBoxImage {
+    z-index: 10;
+    position: relative;
+    top: -17rem;
+    right: 0;
+    box-shadow: -4rem 4rem 0px 0px $shadowColor;
+  }
+
+  .captureForm {
+
+    padding: $lgAll;
+
+    input,
+    textarea {
+      background: $primaryColor;
+    }
+
+
+  }
+
+  aside {
+
+    div {
+      margin: 2rem 0;
+    }
+
+  }
+}
+
+.socialIcons {
+  padding: $smY;
+
+  i {
+    font-size: 1.8vw;
+    padding-right: 2rem;
+  }
+}

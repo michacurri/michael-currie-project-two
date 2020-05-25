@@ -39,8 +39,16 @@ section:nth-child(even) {background: $secondaryColor;}
   @include headerSettings;
 }
 
+.relative {
+  @include relative();
+}
+
 .flex {
   @include flex();
+}
+
+.rowReverse {
+  @include rowReverse();
 }
 
 .flexColumn {
@@ -61,6 +69,10 @@ section:nth-child(even) {background: $secondaryColor;}
 
 .justEnd {
   @include justEnd();
+}
+
+.dmb {
+  @include dmb();
 }
 
 .alignStart {

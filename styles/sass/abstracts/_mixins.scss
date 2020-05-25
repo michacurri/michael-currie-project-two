@@ -1,23 +1,30 @@
 @mixin innerWrapper {
   width: 90%;
-  max-width: $maxWidth;
+  max-width: ($maxWidth * 1px);
   height: 100%;
   margin: 0 auto;
 }
 
 @mixin headerSettings {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: scroll;
   height: 100%;
   width: 100%;
+}
+
+@mixin relative {
+  position: relative;
 }
 
 @mixin flex {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+}
+
+@mixin rowReverse {
+  flex-direction: row-reverse;
 }
 
 @mixin flexColumn {
@@ -39,6 +46,10 @@
 
 @mixin justEnd {
   justify-content: flex-end;
+}
+
+@mixin dmb {
+  justify-content: space-between;
 }
 
 @mixin alignStart {
