@@ -39,6 +39,10 @@ nav a {
   text-transform: uppercase;
   line-height: 29px;
   letter-spacing: 1px;
+
+  &:visited {
+    color: $textColor;
+  }
 }
 
 p {
@@ -53,10 +57,16 @@ p {
   text-transform: uppercase;
   letter-spacing: 1.1px;
 }
+
 .btn {
   font-family: $playfairDisplay;
   font-size: createREM($btnFontSize);
   text-transform: uppercase;
   line-height: 32px;
   letter-spacing: 1px;
+  text-decoration: none;
+
+  &:visited {
+    color: $textColor;
+  }
 }

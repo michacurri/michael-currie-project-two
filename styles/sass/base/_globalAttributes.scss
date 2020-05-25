@@ -14,42 +14,76 @@
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 // automatic background colours for <section>'s
 section:nth-child(odd) {background: $primaryColor;}
 section:nth-child(even) {background: $secondaryColor;}
 
 
-img {
-  width: 100%
+
+.btn {
+  display: flex;
+  background: $btnColor;
+  width: 25rem;
+  justify-content: center;
+  padding: $smAll;
+
 }
 
+
+// class attributes
 .headerSettings {
   @include headerSettings;
 }
 
-
-.container {
-  width: 100%;  
-  height: 100%;
+.flex {
+  @include flex();
 }
 
-.flexColumnCenter {
-  @include flexColumnCenter();
+.flexColumn {
+  @include flexColumn();
 }
 
-.flexLeft {
-  @include flexLeft();
+.centerCenter {
+  @include centerCenter();
 }
 
-.flexRight {
-  @include flexRight();
+.justStart {
+  @include justStart();
 }
 
-.flexRowEvenTop {
-  @include flexJustifyTop();
+.justCenter {
+  @include justCenter();
 }
 
-.flexRowEvenCenter {
-  @include flexJustifyCenter();
+.justEnd {
+  @include justEnd();
 }
 
+.alignStart {
+  @include alignStart();
+}
+
+.alignCenter {
+  @include alignCenter();
+}
+
+.alignEnd {
+  @include alignEnd();
+}
+
+
+.alignSelfStart {
+  @include alignSelfStart();
+}
+
+.alignSelfCenter {
+  @include alignSelfCenter();
+}
+
+.alignSelfEnd {
+  @include alignSelfEnd();
+}

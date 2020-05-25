@@ -1,3 +1,10 @@
+@media (max-width: 950px) {
+  .noOverflow {
+    @include noOverflow();
+  }
+}
+
+
 @media (max-width: 768px) {
 
   nav label {
@@ -60,9 +67,5 @@
 
   input[type="checkbox"] {
     display: none;
-  }
-  
-  .noOverflow {
-    @include noOverflow();
   }
 }

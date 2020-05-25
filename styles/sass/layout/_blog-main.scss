@@ -1,0 +1,84 @@
+.fullWrapper {
+  // .blogSection {
+  background: $secondaryColor;
+  padding-top: 10rem;
+}
+
+.sectionSeven {
+  width: calc((100% / 3) - 10rem);
+  margin-right: 10rem;
+
+  .container:nth-child(1) {
+
+    width: 115%;
+
+    img {
+      position: relative;
+      left: -7.6rem;
+    }
+  }
+}
+
+.sectionEight {
+  width: calc((100% / 3)*2 - 10rem);
+
+  .blog>.container {
+    padding: 6% 6% 1% 6%;
+    ;
+    box-shadow: -9px 9px 0 -4px #FDFA69;
+  }
+}
+
+.comments {
+  margin: 5rem 0;
+
+  .commentContainer {
+    margin: 4rem 0;
+
+    .container {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.commentBox {
+
+  fieldset,
+  a {
+    justify-content: center;
+    margin: $mdY;
+  }
+
+  .nameField {
+    width: calc((100% / 2) - 4%);
+    float: left;
+  }
+
+  .emailField {
+    width: calc((100% / 2) - 4%);
+    float: right;
+  }
+
+  .name,
+  .emailAddress {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: $btnColor;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    border: none;
+    background: $secondaryColor;
+    font-size: createREM($bodyFontSize);
+    padding: 1rem;
+    resize: none;
+  }
+
+  .commentField {
+    border-color: $btnColor;
+  }
+
+}
