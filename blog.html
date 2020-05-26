@@ -11,9 +11,9 @@
 <body>
   <header>
     <div class="blogHeaderImage headerSettings">
-      <div class="wrapper">
-        <div class="headerContent">
-          <nav>
+      <!-- <div class="wrapper"> -->
+        <div class="headerContent flex alignEnd flexColumn dmb relative">
+          <nav class="wrapper flex justEnd">
             <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger" />
             <ul class="navMenu">
@@ -23,12 +23,12 @@
               <li><a href="/contact.html">contact</a></li>
             </ul>
           </nav>
-          <h2>Blog</h2>
+          <h2 class="flex justCenter">Blog</h2>
+          <div class="blogBoxImage flex relative">
+            <img src="./assets/images/blog-post-image.jpg" alt="sunsets in a field - what could be better">
+          </div>
         </div>
-        <div class="headerBoxImage">
-          <img src="./assets/images/blog-post-image.jpg" alt="sunsets in a field - what could be better">
-        </div>
-      </div>
+      <!-- </div> -->
     </div>
   </header>
 
@@ -59,7 +59,7 @@
         </section>
 
         <section class="sectionEight flex">
-          <div class="container">
+          <!-- <div class="container"> -->
             <div class="blog flex flexColumn">
               <div class="container flexColumn justStart">
                 <h3>finding great locations</h3>
@@ -132,12 +132,13 @@
 
 
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </body>
-  <footer>
-    <div class="flex centerCenter">
-      <p>Copyright &copy; 2018 HackerYou</p>
-    </div>
-  </footer>
+<footer>
+  <div class="flex centerCenter">
+    <p>Copyright &copy; 2018 HackerYou</p>
+  </div>
+</footer>
+
 </html>

@@ -12,7 +12,7 @@ h1 {
 //get in touch, blog
 h2 {
   font-family: $playfairDisplay;
-  font-size: createREM($h2FontSize * 0.8);
+  font-size: createVW($h2FontSize);
   text-transform: uppercase;
   line-height: 92px;  
 }
