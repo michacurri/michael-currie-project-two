@@ -82,29 +82,3 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-// @mixin fontSize($sizeValue) {
-//   font-size: $sizeValue;
-// }
-
-// breakpoints
-// the following code was originally conceived by Hugo Giraudel, and posted to https://www.sitepoint.com/managing-responsive-breakpoints-sass/, on May 20, 2014
-// amendments have been made for use with my code.  
-
-// $breakpoints: (
-//   'small' : ( min-width: 767px ),
-//   'medium' : ( min-width: 992px ),
-//   'large' : ( min-width: 1200px )
-// );
-
-// @mixin respond-to($name) {
-//   @if maphas-key($breakpoints, $name) {
-//     @media #{inspect(map-get($breakpoints, $name))} {
-//       @content;
-//     }
-//   }
-
-//   @else {
-//     @warn "uh oh";
-//   }
-// }

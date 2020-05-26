@@ -19,6 +19,9 @@ img {
 }
 
 // title margin and padding
+h3 {
+  margin: $mdY;
+}
 
 h4 {
   margin: $lgY;
@@ -35,6 +38,7 @@ section:nth-child(even) {background: $secondaryColor;}
   width: 25rem;
   justify-content: center;
   padding: $smAll;
+  margin: $mdAll;
 
 }
 
