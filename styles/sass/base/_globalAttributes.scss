@@ -18,6 +18,13 @@ img {
   width: 100%;
 }
 
+// title margin and padding
+
+h4 {
+  margin: $lgY;
+}
+
+
 // automatic background colours for <section>'s
 section:nth-child(odd) {background: $primaryColor;}
 section:nth-child(even) {background: $secondaryColor;}
