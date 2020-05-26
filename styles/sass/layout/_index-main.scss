@@ -1,5 +1,5 @@
 .sectionOne.about {
-  height: 60vh;
+  height: 70vh;
   padding: $lgAll;
 }
 
@@ -7,6 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: $mdY;
 
   .container {
     width: calc((100% / 2));
@@ -29,8 +30,7 @@
       padding: $lgX;
     }
 
-    &:nth-child(3) h4,
-    &:nth-child(3) a {
+    &:nth-child(3) h4 {
       display: flex;
       justify-content: flex-end;
     }
@@ -58,6 +58,10 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
+
+  h4 {
+    margin: 0;
+  }
 
   i {
     display: flex;
@@ -101,9 +105,10 @@
 
   ul {
     justify-content: space-evenly;
-
+    
     li {
       list-style: none;
+      margin: $smX;
     }
   }
 }

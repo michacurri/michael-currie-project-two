@@ -45,7 +45,8 @@ nav a {
   }
 }
 
-p {
+p,
+li {
   font-family: $roboto;
   font-size: createREM($bodyFontSize);
   line-height: 32px;  

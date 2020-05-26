@@ -2,70 +2,49 @@
   .noOverflow {
     @include noOverflow();
   }
+
+  p {
+    max-height: 4rem;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 
 @media (max-width: 768px) {
+  
+    // font-size adjustment 
 
-  nav label {
-    font-size: 4rem;
-    float: right;
-    padding: 5% 0;
+  h2 {
+    font-size: createVW($h2FontSize * 0.75);  }
 
-    &:hover,
-    &:focus {
-      color: #FABA63;
-      cursor: pointer;
-    }
-
-    &:active {
-      position: relative;
-      top: 2px;
-    }
+  h3 {
+    font-size: createREM($h3FontSize * 0.75);
   }
 
-  .navMenu {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    width: 50%;
-    left: -50%;
-    top: 1rem;
-    transition: all 0.5s;
-    text-align: left;
+  h4 {
+    font-size: createREM($h4FontSize * 0.75);
+  }
 
-    li {
-      margin: 5% 10% 5%;
+  p {
+    font-size: createREM($bodyFontSize * 0.75);
+  }
 
-      a {
-        display: inline-block;
-        border-bottom: 2px solid transparent;
-        font-size: 2.4rem;
-        font-weight: 200;
-        text-decoration: none;
-        text-transform: capitalize;
-        color: #FABA63;
-      }
-
-      a:hover,
-      a:focus {
-        border-bottom: 2px solid grey;
-      }
-
-      a:active {
-        position: relative;
-        top: 2px;
-      }
-    }
-
+  a {
+    font-size: createREM($navFontSize * 0.75);
   }
 
 
-  input[type="checkbox"]:checked+.navMenu {
-    left: 0;
-  }
+  // margin and padding adjustment 
 
-  input[type="checkbox"] {
-    display: none;
-  }
+  // navMenu li {
+  //   padding: 2%;
+  // }
+
+  // nav ul li {
+  //   padding: 2%;
+  // }
+
 }
