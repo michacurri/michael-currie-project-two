@@ -411,7 +411,7 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 6.4rem;
+  font-size: 4.16667vw;
   text-transform: uppercase;
   line-height: 92px;
 }
@@ -487,13 +487,16 @@ header .contactHeaderImage {
 }
 
 header h1 {
-  margin: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
+  padding-bottom: 3%;
 }
 
 header h2 {
-  margin-bottom: 18rem;
-  padding-left: 15rem;
+  z-index: 20;
 }
 
 #homeAnchor {
@@ -503,30 +506,32 @@ header h2 {
 .headerContent {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   z-index: 10;
+  text-align: center;
 }
 
 .headerBoxImage {
-  position: absolute;
   z-index: 10;
-  top: 23vh;
-  right: 0;
   width: 38vw;
+  margin: 10% 0;
   -webkit-box-shadow: 0vw 0 0 4vw #FDFA69;
           box-shadow: 0vw 0 0 4vw #FDFA69;
+}
+
+.blogBoxImage {
+  z-index: 10;
+  width: 62vw;
+  margin: 15% 0;
+  -webkit-box-shadow: -2vw 2vw 0 0 #FDFA69;
+          box-shadow: -2vw 2vw 0 0 #FDFA69;
+}
+
+.contactBoxImage {
+  z-index: 10;
+  width: 63%;
+  margin: 5% 0;
+  -webkit-box-shadow: -2vw 2vw 0 0 #FDFA69;
+          box-shadow: -2vw 2vw 0 0 #FDFA69;
 }
 
 input[type=checkbox],
@@ -701,6 +706,10 @@ footer {
   color: #FAFAFA;
 }
 
+.blogHeaderImage h2 {
+  margin-left: -10%;
+}
+
 .fullWrapper {
   background: #EFFDF3;
   padding-top: 10rem;
@@ -726,6 +735,7 @@ footer {
 }
 
 .sectionEight .blog > .container {
+  margin-top: 5%;
   padding: 6% 6% 1% 6%;
   -webkit-box-shadow: -9px 9px 0 -4px #FDFA69;
           box-shadow: -9px 9px 0 -4px #FDFA69;
@@ -771,14 +781,22 @@ footer {
 .captureForm textarea {
   width: 100%;
   border: none;
-  background: #EFFDF3;
   font-size: 2rem;
+  background: #EFFDF3;
   padding: 1rem;
   resize: none;
 }
 
 .captureForm .commentField {
   border: 0.2rem solid #4CEEA7;
+}
+
+.contactHeaderImage h2 {
+  margin: 10% 0 0;
+}
+
+.sectionEightInputs {
+  background: #FAFAFA;
 }
 
 .sectionNine section:first-child {
@@ -791,22 +809,9 @@ footer {
   padding: 0 3% 17%;
 }
 
-.sectionNine .headerBoxImage {
-  z-index: 10;
-  position: relative;
-  top: -17rem;
-  right: 0;
-  -webkit-box-shadow: -4rem 4rem 0px 0px #FDFA69;
-          box-shadow: -4rem 4rem 0px 0px #FDFA69;
-}
-
-.sectionNine .captureForm {
-  padding: 6%;
-}
-
 .sectionNine .captureForm input,
 .sectionNine .captureForm textarea {
-  background: #FAFAFA;
+  padding: 6%;
 }
 
 .sectionNine aside div {

@@ -13,8 +13,8 @@
   <header>
     <div class="contactHeaderImage headerSettings">
       <div class="wrapper">
-        <div class="headerContent">
-          <nav>
+        <div class="headerContent flex alignEnd flexColumn dmb relative">
+          <nav class="flex justEnd">
             <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger" />
             <ul class="navMenu">
@@ -24,40 +24,43 @@
               <li><a href="/contact.html">contact</a></li>
             </ul>
           </nav>
-          <h2>get in touch</h2>
+          <div class="container flex centerCenter">
+            <h2>get in touch</h2>
+          </div>
+          <section class="contactBoxImage flex">
+            <!-- contact form -->
+            <div class="captureForm flex clearfix">
+              <form action="" class="flex flexColumn clearfix">
+                <fielset class="nameEmailFieldset">
+                  <div class="flex nameField">
+                    <fieldset class="name flex">
+                      <input class="sectionEightInputs" type="text" maxlength="20" placeholder="Name">
+                    </fieldset>
+                  </div>
+                  <div class="flex emailField">
+                    <fieldset class="emailAddress flex">
+                      <input class="sectionEightInputs" type="email" placeholder="Email address">
+                    </fieldset>
+                  </div>
+                </fielset>
+
+                <fieldset class="flex commentField">
+                  <textarea class="sectionEightInputs" name="" id="" cols="30" rows="6" placeholder="Message"></textarea>
+                </fieldset>
+                <a href="#" class="flex btn">submit</a>
+              </form>
+            </div>
+            <!-- end of form -->
+          </section>
         </div>
       </div>
+
     </div>
   </header>
 
-  <section class="sectionNine relative">
+  <section class="sectionNine">
     <div class="wrapper flex rowReverse">
 
-      <section class="contactSection flex headerBoxImage">
-              <!-- contact form -->
-        <div class="captureForm flex clearfix">
-          <form action="" class="flex flexColumn clearfix">
-            <fielset class="nameEmailFieldset">
-              <div class="flex nameField">
-                <fieldset class="name flex">
-                  <input type="text" maxlength="20" placeholder="Name">
-                </fieldset>
-              </div>
-              <div class="flex emailField">
-                <fieldset class="emailAddress flex">
-                  <input type="email" placeholder="Email address">
-                </fieldset>
-              </div>
-            </fielset>
-
-            <fieldset class="flex commentField">
-              <textarea name="" id="" cols="30" rows="6" placeholder="Message"></textarea>
-            </fieldset>
-            <a href="#" class="flex btn">submit</a>
-          </form>
-        </div>
-        <!-- end of form -->
-      </section>
 
       <section class="flex flexColumn justEnd">
         <div class="socialIcons flex">

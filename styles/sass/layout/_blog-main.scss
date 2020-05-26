@@ -1,3 +1,9 @@
+.blogHeaderImage {
+  h2 {
+    margin-left: -10%;
+  }
+}
+
 .fullWrapper {
   // .blogSection {
   background: $secondaryColor;
@@ -23,6 +29,7 @@
   width: calc((100% / 3)*2 - 10rem);
 
   .blog>.container {
+    margin-top: 5%;
     padding: 6% 6% 1% 6%;
     box-shadow: -9px 9px 0 -4px #FDFA69;
   }
@@ -68,8 +75,8 @@
   textarea {
     width: 100%;
     border: none;
-    background: $secondaryColor;
     font-size: createREM($bodyFontSize);
+    background: $secondaryColor;
     padding: 1rem;
     resize: none;
   }
